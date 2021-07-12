@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>Movie App</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/libs/angular.js"></script>
+        <style>
+            .old {background: red;} 
+            .modern {background: lightblue;}
+            .new {background: lightgreen;}
+        </style>
+    </head>
+    <body>
+        <div ng-controller="MoviesController as movies">
+            <p>
+                {{ movies.myDate | date: 'medium'}}
+            </p>
+        </div>   
+        <script src="js/app.js"></script>
+        <script src="js/MoviesController.js"></script>
+    </body>
+</html>
